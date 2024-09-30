@@ -4,6 +4,7 @@ plugins {
     //id 'org.springframework.boot' version '3.3.+'
     //id "io.freefair.lombok" version "8.10"
     id "io.freefair.aspectj" version "8.10"
+    //id "io.freefair.aspectj.post-compile-weaving" version "8.10"
 }
 
 //apply plugin: 'io.spring.dependency-management'
