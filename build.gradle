@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+    id 'application'
+    //id 'org.springframework.boot' version '3.3.+'
+    //id "io.freefair.lombok" version "8.10"
+    id "io.freefair.aspectj" version "8.10"
+}
+
+//apply plugin: 'io.spring.dependency-management'
+//apply plugin: "io.freefair.lombok"
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(22)
+    }
+}
+
+wrapper {
+    gradleVersion = '8.10'
+}
+
+application {
+    mainClassName = 'mattmck.testapp.Test'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //compileOnly "org.projectlombok:lombok"
+    //annotationProcessor "org.projectlombok:lombok"
+    implementation "org.aspectj:aspectjrt:1.9.22.1"
+    //implementation 'org.springframework.boot:spring-boot-starter-web'
+    //implementation 'org.springframework.boot:spring-boot-starter-aop'
+    //testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+//test {
+//    useJUnitPlatform()
+//}
