@@ -13,7 +13,7 @@ public class TestAspect {
 	
 	@Before("execution(* mattmck.testapp.Customer.*(..))")
 	public void logBeforeAllMethods(JoinPoint joinPoint) {
-      System.out.println("POINTCUT");
+      System.out.println("POINTCUT: " + joinPoint.toLongString());
    }  
 	
 
